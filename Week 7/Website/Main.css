@@ -1,0 +1,37 @@
+body{
+    background-color:lightgrey;
+    background-image: url(https://i.pinimg.com/736x/78/40/38/7840387e4ea884d5b1408dba7a65fdf5.jpg);
+    background-blend-mode:luminosity;
+}
+
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    color:black;
+}
+
+.title
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 42px;
+    color:black;
+}
+
+#home{
+    color:rgb(0, 0, 165);
+}
+
+#contact{
+    color:rgb(2, 145, 145);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+} 
