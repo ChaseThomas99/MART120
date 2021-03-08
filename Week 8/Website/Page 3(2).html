@@ -1,0 +1,75 @@
+<html>
+    <title>Contact Us</title>
+    <h1>Contact Us</h1>
+    <head>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: large;
+                background-color: lightgray;
+            }
+        </style>
+        <script>
+            function checkForm()
+            {
+                var name;
+                name = document.getElementById("txtName").value;
+                if(name == "")
+                {
+                    document.getElementById("txtName").style.backgroundColor = "red";
+                    document.getElementById("txtName").focus();
+                }
+                else
+                {
+                    document.getElementById("txtName").style.backgroundColor = "white";
+                }
+
+                var email;
+                email = document.getElementById("txtName").value;
+                if(email == "")
+                {
+                    document.getElementById("txtEmail").style.backgroundColor = "red";
+                    document.getElementById("txtEmail").focus();
+                }
+                else
+                {
+                    document.getElementById("txtEmail").style.backgroundColor = "white";
+                }
+                checkCheckBox();
+            }
+            function checkCheckBox()
+            {
+                var checkbox;
+                checkbox = document.getElementById("Accept").checked;
+                if(checkbox == false)
+                {
+                  window.alert("You must agree to the Terms and Services")
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <input type="checkbox" id="Accept" onclick="checkCheckBox();"> I have read and agree to the following Terms and Services</a>
+            </tr>
+            <tr>
+                <td colorspan="2"><button id="btnSubmit" onClick="checkForm();">Submit</button></td>
+            </tr>
+        </table>
+        <p><a href="homepage(2).html">Home Page</a></p>
+        <p><a href="Page 2(2).html">Short Story</a></p>
+    </body>
+</html>
