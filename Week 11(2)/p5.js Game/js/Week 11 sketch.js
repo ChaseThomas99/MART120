@@ -1,4 +1,4 @@
-// character x and y5
+// character x and y
 var characterX = 100;
 var characterY = 100;
 
@@ -52,11 +52,14 @@ function draw()
     // bottom border
     rect(0, height-10,width, 10);
     // right upper border
-    rect(width-10,0,10,height-50);
+    rect(width-10,0,10,height-150);
+    // right lower border
+    rect(490,500,10,200);
+
 
     // exit message
     textSize(16);
-    text("Exit Here", width-80,height-55)
+    text("Exit Here", width-80,height-155)
 
     //character
     fill(0);
@@ -116,7 +119,7 @@ function draw()
        ball2DirectionY = -1*ball2DirectionY;
       }
 
-    // check if the character has left the exit
+    // check if character has left the exit
     if(characterX > width && characterY > width-50)
     {
         fill(0);
@@ -127,7 +130,8 @@ function draw()
 
     // create cricle on mouse click
     fill(120,130,140);
-    circle(mouseShapeX, mouseShapeY, 25);
+    // circle(mouseShapeX, mouseShapeY, 25);
+    rect(mouseShapeX,mouseShapeY,50,50);
 }
 
 function mouseClicked()
